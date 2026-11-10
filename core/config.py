@@ -61,7 +61,7 @@ class Config:
 
     # --- Ollama ---
     OLLAMA_MODEL = "llama3.2:3b"
-    OLLAMA_URL = "http://localhost:11434"
+    OLLAMA_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
 
     # --- Whisper ---
     # "tiny"   ~1-2s  on CPU, 39MB  — recommended for navcore

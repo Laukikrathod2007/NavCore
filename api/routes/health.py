@@ -23,7 +23,7 @@ async def health_check(request: Request) -> dict:
         Dict with status for each component.
     """
     result = {
-        "status": "healthy",
+        "status": "ok",
         "qdrant_ok": False,
         "graph_ok": False,
         "ollama_ok": False,

@@ -9,8 +9,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install Python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements-railway.txt .
+# Install CPU-only PyTorch first so pip does not pull CUDA libraries into the
+# CPU-only Railway image. sentence-transformers and Whisper reuse this wheel.
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu \
+    && pip install --no-cache-dir -r requirements-railway.txt
 
 # Copy application code
 COPY . .
@@ -24,6 +27,9 @@ EXPOSE 8001
 # Disable TF to avoid import conflicts (we use PyTorch only)
 ENV TRANSFORMERS_NO_TF=1
 ENV TF_CPP_MIN_LOG_LEVEL=3
+ENV PORT=8001
+ENV OLLAMA_BASE_URL=http://localhost:11434
 
 # Run the API
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8001"]
+CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8001}"]
+

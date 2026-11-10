@@ -1,0 +1,28 @@
+# Python cache and build output
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local models, logs, and developer tools
+ollama_models/
+logs/
+.git/
+.pytest_cache/
+.venv/
+venv/
+frontend/node_modules/
+frontend/.next/
+
+# Keep qdrant_storage/ in the image: it contains the pre-ingested vectors.
