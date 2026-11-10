@@ -1,11 +1,12 @@
 # NavCore
 
-## Live API
+## Live website and API
 
-**Railway:** [navcore-production-06ce08bd.up.railway.app](https://navcore-production-06ce08bd.up.railway.app)  
+**Website (GitHub Pages):** [laukikrathod2007.github.io/NavCore](https://laukikrathod2007.github.io/NavCore/)  
+**API (Railway):** [navcore-production-06ce08bd.up.railway.app](https://navcore-production-06ce08bd.up.railway.app)  
 Health check: [`/health`](https://navcore-production-06ce08bd.up.railway.app/health) · Interactive API: [`/docs`](https://navcore-production-06ce08bd.up.railway.app/docs)
 
-The hosted service runs without Ollama and uses deterministic template directions. The browser frontend is not hosted at this API URL.
+The static frontend is hosted free on GitHub Pages. Its API calls go to Railway, where Ollama is unavailable and deterministic template directions are used.
 
 **Offline-first, multilingual indoor navigation for complex public buildings.**
 
