@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="100%" height="140" fill="none">
+  <defs>
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fafafa"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Line connecting all nodes -->
+  <line x1="60" y1="70" x2="820" y2="70" stroke="#e5e5e0" stroke-width="3"/>
+  <line x1="60" y1="70" x2="820" y2="70" stroke="#5c8a5c" stroke-width="3" stroke-dasharray="8 8"/>
+
+  <!-- 7 Nodes -->
+  <!-- Node 1: Input -->
+  <g transform="translate(20, 25)">
+    <rect width="100" height="90" rx="12" fill="url(#nodeGrad)" stroke="#e5e5e0" stroke-width="1.5"/>
+    <circle cx="50" cy="30" r="14" fill="#f0f7f2"/>
+    <text x="44" y="35" font-size="12">📥</text>
+    <text x="50" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f1410">1. Input</text>
+    <text x="50" y="74" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#737373">Text / Voice / QR</text>
+  </g>
+
+  <!-- Node 2: Language -->
+  <g transform="translate(145, 25)">
+    <rect width="100" height="90" rx="12" fill="url(#nodeGrad)" stroke="#e5e5e0" stroke-width="1.5"/>
+    <circle cx="50" cy="30" r="14" fill="#f0f7f2"/>
+    <text x="44" y="35" font-size="12">🌐</text>
+    <text x="50" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f1410">2. Language</text>
+    <text x="50" y="74" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#737373">Unicode + Heuristics</text>
+  </g>
+
+  <!-- Node 3: Intent -->
+  <g transform="translate(270, 25)">
+    <rect width="100" height="90" rx="12" fill="url(#nodeGrad)" stroke="#e5e5e0" stroke-width="1.5"/>
+    <circle cx="50" cy="30" r="14" fill="#f0f7f2"/>
+    <text x="44" y="35" font-size="12">🎯</text>
+    <text x="50" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f1410">3. Intent</text>
+    <text x="50" y="74" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#737373">Locate / Nav / Info</text>
+  </g>
+
+  <!-- Node 4: Retrieval -->
+  <g transform="translate(395, 25)">
+    <rect width="100" height="90" rx="12" fill="url(#nodeGrad)" stroke="#e5e5e0" stroke-width="1.5"/>
+    <circle cx="50" cy="30" r="14" fill="#f0f7f2"/>
+    <text x="44" y="35" font-size="12" fill="#fff">🔍</text>
+    <text x="50" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f1410">4. Retrieval</text>
+    <text x="50" y="74" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#2d5016" font-weight="600">Qdrant Vector</text>
+  </g>
+
+  <!-- Node 5: Disambiguation -->
+  <g transform="translate(520, 25)">
+    <rect width="100" height="90" rx="12" fill="url(#nodeGrad)" stroke="#e5e5e0" stroke-width="1.5"/>
+    <circle cx="50" cy="30" r="14" fill="#f0f7f2"/>
+    <text x="44" y="35" font-size="12">⚖️</text>
+    <text x="50" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f1410">5. Disambig</text>
+    <text x="50" y="74" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#737373">Score Gap &lt; 0.08</text>
+  </g>
+
+  <!-- Node 6: Path Planner -->
+  <g transform="translate(645, 25)">
+    <rect width="100" height="90" rx="12" fill="url(#nodeGrad)" stroke="#e5e5e0" stroke-width="1.5"/>
+    <circle cx="50" cy="30" r="14" fill="#f0f7f2"/>
+    <text x="44" y="35" font-size="12">🧭</text>
+    <text x="50" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f1410">6. Path Plan</text>
+    <text x="50" y="74" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#737373">NetworkX BFS</text>
+  </g>
+
+  <!-- Node 7: Direction Generator -->
+  <g transform="translate(770, 25)">
+    <rect width="100" height="90" rx="12" fill="#0f1410" stroke="#0f1410" stroke-width="1.5"/>
+    <circle cx="50" cy="30" r="14" fill="#2d5016"/>
+    <text x="44" y="35" font-size="12" fill="#fff">📢</text>
+    <text x="50" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#ffffff">7. Directions</text>
+    <text x="50" y="74" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#abe6c7">Llama 3.2 3B</text>
+  </g>
+</svg>

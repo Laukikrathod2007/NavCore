@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Frontend dependencies and generated output
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# NavCore local data (offline-first, not version-controlled)
+qdrant_storage/
+qdrant_benchmark_storage*/
+ollama_models/
+logs/
+
+# pytest
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env*
+!.env.example
+!**/.env.example
+
+# Model downloads
+*.bin
+*.safetensors

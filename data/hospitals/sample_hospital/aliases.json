@@ -1,0 +1,190 @@
+[
+  {
+    "canonical_node_id": "cardiology_opd",
+    "aliases": [
+      "Cardiology OPD",
+      "cardiology",
+      "heart department",
+      "Dr. Rajesh Mehta",
+      "Dr. Mehta",
+      "cardiologist",
+      "heart doctor",
+      "dil ke doctor",
+      "dil wala doctor",
+      "hriday rog",
+      "hriday rog visheshagya",
+      "ECG room",
+      "echo test room",
+      "Room 312"
+    ],
+    "procedures": ["ECG", "echocardiogram", "stress test", "angiography consultation"],
+    "doctors": ["Dr. Rajesh Mehta", "Dr. Priya Sharma"]
+  },
+  {
+    "canonical_node_id": "radiology_xray",
+    "aliases": [
+      "Radiology",
+      "X-Ray",
+      "X-Ray department",
+      "imaging",
+      "MRI room",
+      "CT scan",
+      "scan room",
+      "xray karwana hai",
+      "MRI karwana hai",
+      "photo kahaan hai",
+      "Room 212"
+    ],
+    "procedures": ["X-Ray", "MRI", "CT scan", "ultrasound"],
+    "doctors": ["Radiologist on duty"]
+  },
+  {
+    "canonical_node_id": "lab_pathology",
+    "aliases": [
+      "Pathology Lab",
+      "blood test",
+      "lab",
+      "laboratory",
+      "sample collection",
+      "khoon test",
+      "lab test",
+      "blood check",
+      "Room 218"
+    ],
+    "procedures": ["blood test", "urine test", "biopsy", "sample collection"],
+    "doctors": ["Pathologist on duty"]
+  },
+  {
+    "canonical_node_id": "general_opd",
+    "aliases": [
+      "General OPD",
+      "general medicine",
+      "general doctor",
+      "medicine OPD",
+      "general physician",
+      "bhakti doctor",
+      "general checkup",
+      "Room 112"
+    ],
+    "procedures": ["general consultation", "fever check", "routine checkup"],
+    "doctors": ["Dr. General on duty"]
+  },
+  {
+    "canonical_node_id": "pediatric_opd",
+    "aliases": [
+      "Pediatric OPD",
+      "children doctor",
+      "child specialist",
+      "baby doctor",
+      "baccho ka doctor",
+      "pediatrician",
+      "Room 115"
+    ],
+    "procedures": ["child consultation", "vaccination", "growth check"],
+    "doctors": ["Dr. Child specialist on duty"]
+  },
+  {
+    "canonical_node_id": "pharmacy",
+    "aliases": [
+      "Pharmacy",
+      "medicine counter",
+      "dawai",
+      "dawai ki dukan",
+      "prescription counter",
+      "medical store",
+      "Room G04"
+    ],
+    "procedures": ["buy medicine", "collect prescription", "first aid supplies"],
+    "doctors": ["Pharmacist on duty"]
+  },
+  {
+    "canonical_node_id": "emergency",
+    "aliases": [
+      "Emergency",
+      "ER",
+      "emergency department",
+      "casualty",
+      "ICC",
+      "ICU",
+      "aatayajnya",
+      "emergency ward",
+      "24 hours doctor",
+      "Room G10"
+    ],
+    "procedures": ["emergency care", "trauma", "critical care", "ambulance"],
+    "doctors": ["Emergency physician on duty"]
+  },
+  {
+    "canonical_node_id": "neurology_opd",
+    "aliases": [
+      "Neurology OPD",
+      "neurology",
+      "brain doctor",
+      "nervous system doctor",
+      "neurologist",
+      "dimag ka doctor",
+      "sar dard doctor",
+      "Room 315"
+    ],
+    "procedures": ["neurology consultation", "EEG", "headache treatment"],
+    "doctors": ["Dr. Amit Deshpande"]
+  },
+  {
+    "canonical_node_id": "orthopedic_opd",
+    "aliases": [
+      "Orthopedic OPD",
+      "orthopedics",
+      "bone doctor",
+      "joint doctor",
+      "orthopedic surgeon",
+      "haddi ka doctor",
+      "Room 318"
+    ],
+    "procedures": ["bone consultation", "joint pain", "fracture treatment", "physiotherapy referral"],
+    "doctors": ["Dr. Suresh Patil"]
+  },
+  {
+    "canonical_node_id": "reception",
+    "aliases": [
+      "Reception",
+      "front desk",
+      "registration counter",
+      "help desk",
+      "information counter",
+      "swagat counter",
+      "reception desk",
+      "counter"
+    ],
+    "procedures": ["registration", "information", "appointment booking"],
+    "doctors": []
+  },
+  {
+    "canonical_node_id": "lift_A",
+    "aliases": [
+      "Lift A",
+      "main lift",
+      "elevator",
+      "lift",
+      "Wing A lift",
+      "lift lobby",
+      "elevator lobby"
+    ],
+    "procedures": [],
+    "doctors": []
+  },
+  {
+    "canonical_node_id": "main_entrance",
+    "aliases": [
+      "Main Entrance",
+      "entrance",
+      "gate",
+      "entry",
+      "darwaza",
+      "mukhya dwara",
+      "hospital gate",
+      "main gate"
+    ],
+    "procedures": [],
+    "doctors": []
+  }
+]

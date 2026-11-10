@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <!-- Top Wireframe Cube -->
+  <g transform="translate(56, 18)">
+    <!-- Back faces -->
+    <path d="M24 0 L48 12 L48 36 L24 24 Z" fill="#e8f5ed" opacity="0.6" stroke="#2d5016" stroke-width="1.2" stroke-dasharray="2 2" />
+    <path d="M0 12 L24 0 L24 24 L0 36 Z" fill="#f0f7f2" opacity="0.6" stroke="#2d5016" stroke-width="1.2" stroke-dasharray="2 2" />
+    <!-- Front faces -->
+    <path d="M0 12 L24 24 L48 12 L24 0 Z" fill="#ffffff" stroke="#0f1410" stroke-width="1.5" />
+    <path d="M0 12 L0 36 L24 48 L24 24 Z" fill="#f8faf9" stroke="#0f1410" stroke-width="1.5" />
+    <path d="M24 24 L24 48 L48 36 L48 12 Z" fill="#e6f2eb" stroke="#0f1410" stroke-width="1.5" />
+  </g>
+
+  <!-- Middle Translucent Plane (Mint Green) -->
+  <path d="M20 90 L80 60 L140 90 L80 120 Z" fill="#9fe6c8" fill-opacity="0.65" stroke="#5c8a5c" stroke-width="1.2" />
+
+  <!-- Bottom Dotted Ground Plane -->
+  <path d="M20 115 L80 85 L140 115 L80 145 Z" fill="#ffffff" stroke="#999999" stroke-width="1.2" stroke-dasharray="3 3" />
+</svg>

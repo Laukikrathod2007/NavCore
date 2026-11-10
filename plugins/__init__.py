@@ -1,0 +1,1 @@
+"""NavCore plugins package."""

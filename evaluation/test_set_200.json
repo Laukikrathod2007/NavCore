@@ -1,0 +1,2002 @@
+[
+  {
+    "query_id": "EN_001",
+    "query_text": "where is cardiology",
+    "language": "en",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_002",
+    "query_text": "I need to see a heart specialist",
+    "language": "en",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_003",
+    "query_text": "where is Dr. Mehta",
+    "language": "en",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "EN_004",
+    "query_text": "cardiology OPD floor",
+    "language": "en",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_005",
+    "query_text": "how do I get to the heart department",
+    "language": "en",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_006",
+    "query_text": "where can I get an X-ray done",
+    "language": "en",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_007",
+    "query_text": "radiology department",
+    "language": "en",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_008",
+    "query_text": "I need an MRI scan",
+    "language": "en",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_009",
+    "query_text": "where is the CT scan room",
+    "language": "en",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_010",
+    "query_text": "imaging department location",
+    "language": "en",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_011",
+    "query_text": "where do I give a blood test",
+    "language": "en",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_012",
+    "query_text": "pathology lab",
+    "language": "en",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_013",
+    "query_text": "sample collection center",
+    "language": "en",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_014",
+    "query_text": "where is the lab for blood work",
+    "language": "en",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_015",
+    "query_text": "I need to submit a urine sample",
+    "language": "en",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_016",
+    "query_text": "general OPD",
+    "language": "en",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_017",
+    "query_text": "I want to see a general physician",
+    "language": "en",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_018",
+    "query_text": "where is room 112",
+    "language": "en",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_019",
+    "query_text": "routine checkup doctor",
+    "language": "en",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_020",
+    "query_text": "medicine outpatient department",
+    "language": "en",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_021",
+    "query_text": "children doctor",
+    "language": "en",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_022",
+    "query_text": "pediatric OPD location",
+    "language": "en",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_023",
+    "query_text": "where is room 115",
+    "language": "en",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_024",
+    "query_text": "I need a doctor for my child",
+    "language": "en",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_025",
+    "query_text": "baby specialist ward",
+    "language": "en",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_026",
+    "query_text": "where can I get medicines",
+    "language": "en",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_027",
+    "query_text": "pharmacy counter",
+    "language": "en",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_028",
+    "query_text": "I need to collect my prescription",
+    "language": "en",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_029",
+    "query_text": "medicine shop in hospital",
+    "language": "en",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_030",
+    "query_text": "room G04",
+    "language": "en",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_031",
+    "query_text": "where is emergency",
+    "language": "en",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_032",
+    "query_text": "casualty ward",
+    "language": "en",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_033",
+    "query_text": "24 hour emergency service",
+    "language": "en",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_034",
+    "query_text": "accident and emergency",
+    "language": "en",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_035",
+    "query_text": "urgent care unit",
+    "language": "en",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_036",
+    "query_text": "where is neurology",
+    "language": "en",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_037",
+    "query_text": "brain and nerve specialist",
+    "language": "en",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_038",
+    "query_text": "Dr. Deshpande room",
+    "language": "en",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "EN_039",
+    "query_text": "I have severe headaches, where should I go",
+    "language": "en",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_040",
+    "query_text": "neurology OPD floor 3",
+    "language": "en",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_041",
+    "query_text": "bone doctor",
+    "language": "en",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_042",
+    "query_text": "orthopedic department",
+    "language": "en",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_043",
+    "query_text": "Dr. Patil clinic",
+    "language": "en",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "EN_044",
+    "query_text": "joint pain specialist",
+    "language": "en",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_045",
+    "query_text": "fracture treatment room",
+    "language": "en",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_046",
+    "query_text": "where is reception",
+    "language": "en",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_047",
+    "query_text": "I need to register for OPD",
+    "language": "en",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_048",
+    "query_text": "information counter",
+    "language": "en",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_049",
+    "query_text": "where do I make an OPD card",
+    "language": "en",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "EN_050",
+    "query_text": "front desk of the hospital",
+    "language": "en",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_001",
+    "query_text": "dil ke doctor kahaan hain",
+    "language": "hi",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_002",
+    "query_text": "cardiologist kahaan milega",
+    "language": "hi",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_003",
+    "query_text": "heart department kaha hai",
+    "language": "hi",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_004",
+    "query_text": "Dr. Mehta ka room kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "HI_005",
+    "query_text": "hriday rog ka vibhag",
+    "language": "hi",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_006",
+    "query_text": "MRI karwana hai",
+    "language": "hi",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_007",
+    "query_text": "xray kahaan hota hai",
+    "language": "hi",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_008",
+    "query_text": "scan department kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_009",
+    "query_text": "radiology vibhag kahan hai",
+    "language": "hi",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_010",
+    "query_text": "CT scan room dikhao",
+    "language": "hi",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_011",
+    "query_text": "khoon ka test kahaan hota hai",
+    "language": "hi",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_012",
+    "query_text": "blood sample dena hai",
+    "language": "hi",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_013",
+    "query_text": "lab kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_014",
+    "query_text": "pathology vibhag dikhao",
+    "language": "hi",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_015",
+    "query_text": "jaanch kendra kahan hai",
+    "language": "hi",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_016",
+    "query_text": "general checkup ke liye kahaan jaana hai",
+    "language": "hi",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_017",
+    "query_text": "normal doctor dekhna hai",
+    "language": "hi",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_018",
+    "query_text": "medicine OPD kahan hai",
+    "language": "hi",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_019",
+    "query_text": "samanya OPD kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_020",
+    "query_text": "aam doctor se milna hai",
+    "language": "hi",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_021",
+    "query_text": "baccho ka doctor kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_022",
+    "query_text": "children hospital room kahan hai",
+    "language": "hi",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_023",
+    "query_text": "pediatric ward kaha hai",
+    "language": "hi",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_024",
+    "query_text": "chhote bachhe ke liye doctor chahiye",
+    "language": "hi",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_025",
+    "query_text": "shishu rog vibhag kahan hai",
+    "language": "hi",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_026",
+    "query_text": "dawai chahiye kahan se milegi",
+    "language": "hi",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_027",
+    "query_text": "medicine leni hai",
+    "language": "hi",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_028",
+    "query_text": "pharmacy kahan hai",
+    "language": "hi",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_029",
+    "query_text": "davaai ki dukan kahan hai",
+    "language": "hi",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_030",
+    "query_text": "prescription counter kahan hai",
+    "language": "hi",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_031",
+    "query_text": "emergency ward kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_032",
+    "query_text": "casualty kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_033",
+    "query_text": "24 ghante doctor kahan milega",
+    "language": "hi",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_034",
+    "query_text": "aapatkaalin vibhag kahan hai",
+    "language": "hi",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_035",
+    "query_text": "haadsa ward kahan hai",
+    "language": "hi",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_036",
+    "query_text": "dimag ka doctor kahan hai",
+    "language": "hi",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_037",
+    "query_text": "sir dard ka specialist kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_038",
+    "query_text": "neuro OPD kahan hai",
+    "language": "hi",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_039",
+    "query_text": "Dr. Deshpande ka kamra kahan hai",
+    "language": "hi",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "HI_040",
+    "query_text": "naasaa rog vibhag kahan hai",
+    "language": "hi",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_041",
+    "query_text": "haddi ka doctor kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_042",
+    "query_text": "joint pain doctor kahan hai",
+    "language": "hi",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_043",
+    "query_text": "bone specialist kahan milega",
+    "language": "hi",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_044",
+    "query_text": "Dr. Patil ka room kahaan hai",
+    "language": "hi",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "HI_045",
+    "query_text": "hath pair ka ilaj kahan hoga",
+    "language": "hi",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_046",
+    "query_text": "registration karna hai kahan",
+    "language": "hi",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_047",
+    "query_text": "OPD card banana hai",
+    "language": "hi",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_048",
+    "query_text": "reception counter kahan hai",
+    "language": "hi",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_049",
+    "query_text": "pehle kahan jaana chahiye",
+    "language": "hi",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "HI_050",
+    "query_text": "swaagat kaksh kahan hai",
+    "language": "hi",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_001",
+    "query_text": "हृदय रोग विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_002",
+    "query_text": "डॉ. मेहता कुठे आहेत",
+    "language": "mr",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "MR_003",
+    "query_text": "कार्डिओलॉजी कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_004",
+    "query_text": "हृदयरोग तज्ञ कुठे भेटतील",
+    "language": "mr",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_005",
+    "query_text": "ECG कुठे होतो",
+    "language": "mr",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_006",
+    "query_text": "एक्स-रे विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_007",
+    "query_text": "MRI कुठे होतो",
+    "language": "mr",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_008",
+    "query_text": "स्कॅन रूम कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_009",
+    "query_text": "रेडिओलॉजी विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_010",
+    "query_text": "CT स्कॅन कुठे होतो",
+    "language": "mr",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_011",
+    "query_text": "रक्त तपासणी कुठे होते",
+    "language": "mr",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_012",
+    "query_text": "लॅब कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_013",
+    "query_text": "नमुना संकलन केंद्र कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_014",
+    "query_text": "पॅथॉलॉजी विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_015",
+    "query_text": "रक्त तपासणी केंद्र कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_016",
+    "query_text": "सामान्य बाह्यरुग्ण विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_017",
+    "query_text": "जनरल ओपीडी कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_018",
+    "query_text": "सामान्य डॉक्टर कुठे भेटतील",
+    "language": "mr",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_019",
+    "query_text": "साधारण तपासणी कुठे होते",
+    "language": "mr",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_020",
+    "query_text": "मेडिसिन ओपीडी कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_021",
+    "query_text": "बालरोग विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_022",
+    "query_text": "मुलांचे डॉक्टर कुठे आहेत",
+    "language": "mr",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_023",
+    "query_text": "बाल चिकित्सक कुठे भेटतील",
+    "language": "mr",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_024",
+    "query_text": "लहान मुलांचा वार्ड कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_025",
+    "query_text": "पेडियाट्रिक्स विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_026",
+    "query_text": "औषध विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_027",
+    "query_text": "दवाखाना कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_028",
+    "query_text": "औषधे घ्यायची कुठे",
+    "language": "mr",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_029",
+    "query_text": "फार्मसी कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_030",
+    "query_text": "प्रिस्क्रिप्शन काउंटर कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_031",
+    "query_text": "आपत्कालीन विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_032",
+    "query_text": "इमर्जन्सी कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_033",
+    "query_text": "अपघात विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_034",
+    "query_text": "२४ तास सेवा कुठे मिळते",
+    "language": "mr",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_035",
+    "query_text": "कॅज्युअल्टी कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_036",
+    "query_text": "न्यूरोलॉजी विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_037",
+    "query_text": "मेंदूचे डॉक्टर कुठे आहेत",
+    "language": "mr",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_038",
+    "query_text": "डोकेदुखी तज्ञ कुठे भेटतील",
+    "language": "mr",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_039",
+    "query_text": "नर्व्ह डॉक्टर कुठे आहेत",
+    "language": "mr",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_040",
+    "query_text": "डॉ. देशपांडे कुठे आहेत",
+    "language": "mr",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "MR_041",
+    "query_text": "हाडांचे डॉक्टर कुठे आहेत",
+    "language": "mr",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_042",
+    "query_text": "ऑर्थोपेडिक विभाग कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_043",
+    "query_text": "सांधेदुखी तज्ञ कुठे भेटतील",
+    "language": "mr",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_044",
+    "query_text": "डॉ. पाटील कुठे आहेत",
+    "language": "mr",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "MR_045",
+    "query_text": "फ्रॅक्चर उपचार कुठे होतो",
+    "language": "mr",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_046",
+    "query_text": "स्वागत कक्ष कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_047",
+    "query_text": "नोंदणी काउंटर कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_048",
+    "query_text": "माहिती केंद्र कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_049",
+    "query_text": "ओपीडी नोंदणी कुठे होते",
+    "language": "mr",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MR_050",
+    "query_text": "रिसेप्शन कुठे आहे",
+    "language": "mr",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_001",
+    "query_text": "mujhe cardiology jana hai",
+    "language": "hi-mix",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_002",
+    "query_text": "Dr. Mehta kahan hain",
+    "language": "hi-mix",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "MIX_003",
+    "query_text": "heart specialist ka room kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_004",
+    "query_text": "ECG test karna hai kahan",
+    "language": "hi-mix",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_005",
+    "query_text": "dil ki bimari ka department kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "cardiology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "cardiology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_006",
+    "query_text": "MRI karwana hai please",
+    "language": "hi-mix",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_007",
+    "query_text": "X-Ray room kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_008",
+    "query_text": "CT scan kaha hota hai",
+    "language": "hi-mix",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_009",
+    "query_text": "radiology department kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_010",
+    "query_text": "scan karana hai mujhe",
+    "language": "hi-mix",
+    "expected_destination_node": "radiology_xray",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "radiology_xray"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_011",
+    "query_text": "blood test dena hai kahan",
+    "language": "hi-mix",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_012",
+    "query_text": "pathology lab kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_013",
+    "query_text": "sample collection center kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_014",
+    "query_text": "khoon ki janch kahan hoti hai",
+    "language": "hi-mix",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_015",
+    "query_text": "lab test karwana hai mujhe",
+    "language": "hi-mix",
+    "expected_destination_node": "lab_pathology",
+    "expected_path": ["main_entrance", "lift_A", "floor_2_corridor_A", "lab_pathology"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_2_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_016",
+    "query_text": "general OPD kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_017",
+    "query_text": "normal doctor se milna hai",
+    "language": "hi-mix",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_018",
+    "query_text": "general checkup karna hai",
+    "language": "hi-mix",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_019",
+    "query_text": "medicine doctor kahan milega",
+    "language": "hi-mix",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_020",
+    "query_text": "routine test ke liye doctor kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "general_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "general_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_021",
+    "query_text": "baccho ka doctor kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_022",
+    "query_text": "child specialist milega kahan",
+    "language": "hi-mix",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_023",
+    "query_text": "pediatric OPD kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_024",
+    "query_text": "baby doctor room kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_025",
+    "query_text": "meri beti ko doctor dikhana hai",
+    "language": "hi-mix",
+    "expected_destination_node": "pediatric_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_1_corridor_A", "pediatric_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_1_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_026",
+    "query_text": "dawai leni hai kahan se",
+    "language": "hi-mix",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_027",
+    "query_text": "medicine counter kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_028",
+    "query_text": "pharmacy kahan milegi",
+    "language": "hi-mix",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_029",
+    "query_text": "prescription submit karna hai kahan",
+    "language": "hi-mix",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_030",
+    "query_text": "medicine shop hospital mein kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "pharmacy",
+    "expected_path": ["main_entrance", "reception", "pharmacy"],
+    "expected_step_count": 3,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_031",
+    "query_text": "emergency kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_032",
+    "query_text": "accident ward kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_033",
+    "query_text": "urgent doctor chahiye abhi",
+    "language": "hi-mix",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_034",
+    "query_text": "24 hour service kahan milegi",
+    "language": "hi-mix",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_035",
+    "query_text": "casualty ward kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "emergency",
+    "expected_path": ["main_entrance", "emergency"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_036",
+    "query_text": "brain doctor kahan milega",
+    "language": "hi-mix",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_037",
+    "query_text": "neuro OPD kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_038",
+    "query_text": "sir dard ke liye doctor kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_039",
+    "query_text": "Dr. Deshpande kahan milenge",
+    "language": "hi-mix",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "MIX_040",
+    "query_text": "dimag ka specialist kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "neurology_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "neurology_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_041",
+    "query_text": "bone doctor chahiye mujhe",
+    "language": "hi-mix",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_042",
+    "query_text": "haddi ka specialist kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_043",
+    "query_text": "joint pain ka doctor kahan milega",
+    "language": "hi-mix",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_044",
+    "query_text": "Dr. Patil room kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "low"
+  },
+  {
+    "query_id": "MIX_045",
+    "query_text": "orthopedic OPD kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "orthopedic_opd",
+    "expected_path": ["main_entrance", "lift_A", "floor_3_corridor_A", "orthopedic_opd"],
+    "expected_step_count": 4,
+    "junction_nodes_in_path": ["floor_3_corridor_A"],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_046",
+    "query_text": "registration counter kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_047",
+    "query_text": "OPD card kahan banta hai",
+    "language": "hi-mix",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_048",
+    "query_text": "reception desk kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_049",
+    "query_text": "information counter kahan hai",
+    "language": "hi-mix",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  },
+  {
+    "query_id": "MIX_050",
+    "query_text": "pahle kahan jaun hospital mein",
+    "language": "hi-mix",
+    "expected_destination_node": "reception",
+    "expected_path": ["main_entrance", "reception"],
+    "expected_step_count": 2,
+    "junction_nodes_in_path": [],
+    "ambiguity_level": "none"
+  }
+]

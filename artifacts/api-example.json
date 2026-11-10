@@ -1,0 +1,22 @@
+{
+  "directions": "Start at Main Entrance. Go to Lift A (Main) (near reception), turn here. Go to Floor 3 Corridor A (Floor 3) (near water_cooler_3), turn here. Your destination: Cardiology OPD, Room 312 (Open: Mon-Sat 9AM-2PM).",
+  "destination": "Cardiology OPD",
+  "destination_node_id": "cardiology_opd",
+  "detected_language": "en",
+  "path_nodes": [
+    "main_entrance",
+    "lift_A",
+    "floor_3_corridor_A",
+    "cardiology_opd"
+  ],
+  "warnings": [],
+  "latency_ms": 3367.89,
+  "low_confidence": false,
+  "rephrase_message": null,
+  "is_multi_destination": false,
+  "requires_disambiguation": true,
+  "disambiguation_question": null,
+  "disambiguation_options": null,
+  "current_location_used": "main_entrance",
+  "path_error": null
+}

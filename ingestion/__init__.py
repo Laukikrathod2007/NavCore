@@ -1,0 +1,1 @@
+"""NavCore ingestion pipeline package."""

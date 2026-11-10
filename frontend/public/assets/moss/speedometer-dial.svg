@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <!-- Mint Green Solid Circle -->
+  <circle cx="80" cy="88" r="54" fill="#9fe6c8" />
+
+  <!-- Surrounding Tick Marks -->
+  <line x1="80" y1="20" x2="80" y2="28" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="108" y1="26" x2="103" y2="33" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="132" y1="44" x2="125" y2="49" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="146" y1="68" x2="138" y2="70" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="148" y1="96" x2="140" y2="94" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="52" y1="26" x2="57" y2="33" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="28" y1="44" x2="35" y2="49" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="14" y1="68" x2="22" y2="70" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="12" y1="96" x2="20" y2="94" stroke="#0f1410" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Gauge Needle Pointing Fast/Up-Left -->
+  <line x1="80" y1="88" x2="102" y2="52" stroke="#0f1410" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="80" cy="88" r="4" fill="#0f1410" />
+</svg>

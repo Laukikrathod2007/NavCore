@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NavCore Flow Diagram</title>
+  <style>
+    body {
+      background: #f0f4f8;
+      background-image: radial-gradient(#b0cce4 1px, transparent 1px);
+      background-size: 28px 28px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    svg {
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+    }
+
+    /* parallelogram input */
+    .input-shape { fill: #dbeafe; stroke: #3b82f6; stroke-width: 2.5; }
+
+    /* rounded rect — processing nodes */
+    .process-box { fill: #ffffff; stroke: #3b82f6; stroke-width: 2; }
+
+    /* database cylinder */
+    .db-top    { fill: #e5e7eb; stroke: #6b7280; stroke-width: 2; }
+    .db-body   { fill: #f3f4f6; stroke: #6b7280; stroke-width: 2; }
+
+    /* model boxes */
+    .model-box { fill: #f9fafb; stroke: #9ca3af; stroke-width: 1.8; }
+
+    /* output box */
+    .output-box { fill: #dbeafe; stroke: #3b82f6; stroke-width: 2.5; }
+
+    /* arrows */
+    .arrow { stroke: #1f2937; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+
+    text {
+      font-size: 13px;
+      fill: #1f2937;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    .label-small { font-size: 11px; fill: #6b7280; }
+    .node-title  { font-size: 13px; font-weight: 600; fill: #111827; }
+    .node-sub    { font-size: 11px; fill: #6b7280; }
+  </style>
+</head>
+<body>
+<svg width="520" height="860" viewBox="0 0 520 860" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6"
+            refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1f2937" />
+    </marker>
+  </defs>
+
+  <!-- ── NODE 1: Input ── parallelogram -->
+  <polygon class="input-shape"
+    points="110,30  410,30  380,90  80,90" />
+  <text x="245" y="53" class="node-title">User Input</text>
+  <text x="245" y="72" class="node-sub">(Text · Voice · QR Scan)</text>
+
+  <!-- arrow -->
+  <line class="arrow" x1="245" y1="90" x2="245" y2="128" />
+
+  <!-- ── NODE 2: Language Detector ── -->
+  <rect class="process-box" x="110" y="130" width="270" height="64" rx="8"/>
+  <text x="245" y="153" class="node-title">Language Detector</text>
+  <text x="245" y="172" class="node-sub">Hindi · Marathi · English · Hinglish</text>
+
+  <!-- arrow -->
+  <line class="arrow" x1="245" y1="194" x2="245" y2="232" />
+
+  <!-- ── NODE 3: Intent Classifier ── -->
+  <rect class="process-box" x="110" y="234" width="270" height="64" rx="8"/>
+  <text x="245" y="257" class="node-title">Intent Classifier</text>
+  <text x="245" y="276" class="node-sub">Navigation · Amenity · Multi-destination</text>
+
+  <!-- arrow -->
+  <line class="arrow" x1="245" y1="298" x2="245" y2="336" />
+
+  <!-- ── NODE 4: Embedding + Qdrant ── -->
+  <!-- label above cylinder -->
+  <rect class="process-box" x="110" y="338" width="270" height="56" rx="8"/>
+  <text x="245" y="358" class="node-title">Semantic Retrieval</text>
+  <text x="245" y="376" class="node-sub">multilingual-e5-small + Qdrant Edge</text>
+
+  <!-- arrow to db -->
+  <line class="arrow" x1="245" y1="394" x2="245" y2="428" />
+
+  <!-- ── DATABASE cylinder ── -->
+  <!-- body rect -->
+  <rect class="db-body" x="145" y="445" width="200" height="64" rx="4"/>
+  <!-- top ellipse -->
+  <ellipse class="db-top" cx="245" cy="448" rx="100" ry="18"/>
+  <!-- bottom ellipse outline (lower half) -->
+  <path d="M145,509 a100,18 0 0,0 200,0" fill="#e5e7eb" stroke="#6b7280" stroke-width="2"/>
+  <text x="245" y="478" class="node-title">Vector Store</text>
+  <text x="245" y="496" class="node-sub">Local Qdrant (offline)</text>
+
+  <!-- arrows from DB to two model boxes -->
+  <line class="arrow" x1="195" y1="516" x2="130" y2="572" />
+  <line class="arrow" x1="295" y1="516" x2="360" y2="572" />
+
+  <!-- ── NODE 5a: Disambiguation / BFS Path Planner ── -->
+  <rect class="model-box" x="40" y="574" width="180" height="68" rx="8"/>
+  <text x="130" y="596" class="node-title">Path Planner</text>
+  <text x="130" y="614" class="node-sub">BFS on hospital graph</text>
+  <text x="130" y="630" class="node-sub">(deterministic routing)</text>
+
+  <!-- ── NODE 5b: Disambiguation ── -->
+  <rect class="model-box" x="280" y="574" width="180" height="68" rx="8"/>
+  <text x="370" y="596" class="node-title">Disambiguation</text>
+  <text x="370" y="614" class="node-sub">Resolves ambiguous</text>
+  <text x="370" y="630" class="node-sub">or multi-destination</text>
+
+  <!-- arrows from both to direction generator -->
+  <line class="arrow" x1="130" y1="642" x2="205" y2="726" />
+  <line class="arrow" x1="370" y1="642" x2="295" y2="726" />
+
+  <!-- ── NODE 7: Direction Generator (LLM) ── -->
+  <rect class="process-box" x="110" y="728" width="270" height="64" rx="8"/>
+  <text x="245" y="751" class="node-title">Direction Generator</text>
+  <text x="245" y="770" class="node-sub">Llama 3.2 3B via Ollama (offline)</text>
+
+  <!-- arrow -->
+  <line class="arrow" x1="245" y1="792" x2="245" y2="826" />
+
+  <!-- ── OUTPUT ── parallelogram -->
+  <polygon class="output-box"
+    points="80,828  410,828  380,860  50,860" />
+  <text x="230" y="843" class="node-title">Natural Language Directions</text>
+  <text x="230" y="857" class="node-sub">in user's language</text>
+
+</svg>
+</body>
+</html>
