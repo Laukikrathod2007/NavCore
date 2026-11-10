@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { publicAsset } from "../../lib/urls";
 
 interface UseCaseTab {
   id: string;
@@ -273,7 +274,7 @@ export const UseCasesSection: React.FC = () => {
               position: "absolute",
               inset: 0,
               opacity: 0.25,
-              backgroundImage: "url('/assets/moss/mosaic-texture.svg')",
+              backgroundImage: `url('${publicAsset("/assets/moss/mosaic-texture.svg")}')`,
               backgroundSize: "cover",
             }}
           />

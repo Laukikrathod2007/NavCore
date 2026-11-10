@@ -21,6 +21,7 @@ import { NavCoreDisambiguationModal, NavCoreDisambiguationOption } from "./NavCo
 import { Modal } from "../ui/Modal";
 import { useVoiceCapture, VoiceQueryResult } from "../../lib/useVoiceCapture";
 import { VoiceFeedback } from "../ui/VoiceFeedback";
+import { apiUrl, publicAsset } from "../../lib/urls";
 
 export const NavCoreView: React.FC = () => {
   const [query, setQuery] = useState("");
@@ -99,10 +100,8 @@ export const NavCoreView: React.FC = () => {
     setIsSearching(true);
 
     try {
-      const apiBase = (process.env.NEXT_PUBLIC_NAVCORE_API_URL || "").replace(/\/$/, "");
-      const endpoint = apiBase ? `${apiBase}/query/text` : "/api/query/text";
       const languageOverride = activeLang === "hiMix" ? "hi-mix" : activeLang;
-      const response = await fetch(endpoint, {
+      const response = await fetch(apiUrl("/query/text"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -192,7 +191,7 @@ export const NavCoreView: React.FC = () => {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "12px" }}>
-            <img src="/assets/brand/navcore-emblem-icon.png" alt="NavCore" width="40" height="40" />
+            <img src={publicAsset("/assets/brand/navcore-emblem-icon.png")} alt="NavCore" width="40" height="40" />
             <div>
               <div style={{ fontSize: "20px", fontWeight: 700, color: "#ffffff", letterSpacing: "-0.02em" }}>
                 Nav<span style={{ color: "#abe6c7" }}>Core</span>

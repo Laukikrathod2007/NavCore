@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "../ui/Icons";
+import { publicAsset } from "../../lib/urls";
 
 interface NavbarProps {
   onOpenNavCore?: () => void;
@@ -95,7 +96,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenNavCore }) => {
           {/* Brand Logo & Wordmark */}
           <Link href="/" className="brand-lockup" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none" }}>
             <img
-              src="/assets/brand/navcore-emblem-icon.png"
+              src={publicAsset("/assets/brand/navcore-emblem-icon.png")}
               alt="NavCore"
               width="32"
               height="32"

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Badge } from "../ui/Badge";
+import { publicAsset } from "../../lib/urls";
 
 export const Footer: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ export const Footer: React.FC = () => {
           {/* Brand info */}
           <div style={{ gridColumn: "span 2" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
-              <img src="/assets/brand/navcore-emblem-icon.png" alt="NavCore" width="32" height="32" />
+              <img src={publicAsset("/assets/brand/navcore-emblem-icon.png")} alt="NavCore" width="32" height="32" />
               <span style={{ fontSize: "18px", fontWeight: 700, color: "#0f1410" }}>
                 Nav<span style={{ color: "#2d5016" }}>Core</span>
               </span>

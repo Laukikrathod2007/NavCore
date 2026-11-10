@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { apiUrl } from "./urls";
 
 type VoiceCaptureOptions = {
   onTranscript: (text: string, result: VoiceQueryResult) => void;
@@ -120,12 +121,8 @@ export function useVoiceCapture({ onTranscript, language = "en-IN", currentNode 
         form.append("current_node", currentNode);
         setIsProcessing(true);
         try {
-        // Always use the relative /api prefix so Next.js rewrites handle CORS.
-          // For production, set NEXT_PUBLIC_NAVCORE_API_URL (e.g. https://your-api.railway.app)
-          // For local dev, the Next.js rewrite in next.config.js proxies /api/* → localhost:8001
-          const apiBase = (process.env.NEXT_PUBLIC_NAVCORE_API_URL || "").replace(/\/$/, "");
-          const endpoint = apiBase ? `${apiBase}/query/audio` : "/api/query/audio";
-          const response = await fetch(endpoint, { method: "POST", body: form });
+          // Local dev uses the Next.js proxy; static deployments call the API directly.
+          const response = await fetch(apiUrl("/query/audio"), { method: "POST", body: form });
           const rawBody = await response.text();
           let data: VoiceQueryResult & { message?: string; detail?: string; transcribed_text?: string } = {};
           try {

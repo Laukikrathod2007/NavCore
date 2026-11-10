@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { HOSPITAL_NODES, resolveQueryOffline } from "../../lib/hospitalData";
+import { publicAsset } from "../../lib/urls";
 
 const queries = [
   { text: "DIL KE DOCTOR KAHAAN HAIN?", lang: "hi" as const, label: "Hindi" },
@@ -81,7 +82,7 @@ export const HeroSection: React.FC = () => {
             aria-label={isPlaying ? "Speaking directions" : "Hear directions for this example"}
             disabled={isPlaying}
           >
-            <img src="/assets/brand/navcore-emblem-icon.png" alt="NavCore multilingual navigation emblem" />
+            <img src={publicAsset("/assets/brand/navcore-emblem-icon.png")} alt="NavCore multilingual navigation emblem" />
             <span className="hero-agent-play" aria-hidden="true">
               {isPlaying ? <span className="hero-agent-equalizer"><i /><i /><i /></span> : <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg>}
             </span>

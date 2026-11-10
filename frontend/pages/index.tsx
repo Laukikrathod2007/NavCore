@@ -17,6 +17,7 @@ import { HardwareSpecs } from "../components/landing/HardwareSpecs";
 import { FAQSection } from "../components/landing/FAQSection";
 import { Footer } from "../components/layout/Footer";
 import { FloatingAgentPill } from "../components/landing/FloatingAgentPill";
+import { publicAsset } from "../lib/urls";
 
 const HomePage: NextPage = () => {
   useEffect(() => {
@@ -42,7 +43,7 @@ const HomePage: NextPage = () => {
           name="description"
           content="Sub-10ms offline indoor spatial retrieval engine for Indian physical spaces. Speaks Hindi, Marathi, Hinglish, & English with zero Wi-Fi and zero junction hallucinations."
         />
-        <link rel="icon" type="image/png" href="/assets/brand/navcore-emblem-icon.png" />
+        <link rel="icon" type="image/png" href={publicAsset("/assets/brand/navcore-emblem-icon.png")} />
       </Head>
 
       <div className="marketing-page" style={{ minHeight: "100vh", backgroundColor: "#fafafa", position: "relative" }}>

@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { resolveQueryOffline } from "../lib/hospitalData";
+import { apiUrl } from "../lib/urls";
 
 export interface NavigationResult {
   destination: string;
@@ -27,7 +28,7 @@ export function useNavigation(defaultStart = "main_entrance") {
       setError(null);
 
       try {
-        const res = await fetch("/api/query/text", {
+        const res = await fetch(apiUrl("/query/text"), {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

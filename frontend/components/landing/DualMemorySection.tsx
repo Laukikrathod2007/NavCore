@@ -1,21 +1,22 @@
 import React from "react";
+import { publicAsset } from "../../lib/urls";
 
 const principles = [
   {
     label: "Semantic memory",
-    image: "/assets/moss/cube-planes.svg",
+    image: publicAsset("/assets/moss/cube-planes.svg"),
     title: "Replace cloud vector databases",
     description: "No external retrieval layer. No network hops. Dual-memory architecture resolves colloquial patient speech and eliminates latency at the source.",
   },
   {
     label: "Offline deployment",
-    image: "/assets/moss/concentric-orbits.svg",
+    image: publicAsset("/assets/moss/concentric-orbits.svg"),
     title: "Run navigation where your patients are",
     description: "NavCore. Edge laptop. Tablet. Touchscreen. Deploy in concrete basements, emergency triage, and Wi-Fi dead zones where reliability matters most.",
   },
   {
     label: "Topological memory",
-    image: "/assets/moss/speedometer-dial.svg",
+    image: publicAsset("/assets/moss/speedometer-dial.svg"),
     title: "Retrieve and route in <10 ms",
     description: "Enable real-time turn-by-turn conversational guidance. 0% junction hallucination guaranteed by deterministic topological graph pathfinding.",
   },

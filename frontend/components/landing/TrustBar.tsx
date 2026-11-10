@@ -1,4 +1,5 @@
 import React from "react";
+import { publicAsset } from "../../lib/urls";
 
 export const TrustBar: React.FC = () => {
   const hospitalPartners = [
@@ -11,12 +12,12 @@ export const TrustBar: React.FC = () => {
   ];
 
   const mossLogos = [
-    { src: "/assets/moss/microsoft.svg", alt: "Microsoft", height: 20 },
-    { src: "/assets/moss/berkeley.svg", alt: "UC Berkeley", height: 22 },
-    { src: "/assets/moss/stanford.svg", alt: "Stanford", height: 24 },
-    { src: "/assets/moss/cmu.svg", alt: "CMU", height: 20 },
-    { src: "/assets/moss/langchain.svg", alt: "LangChain", height: 22 },
-    { src: "/assets/moss/nextjs.svg", alt: "Next.js", height: 18 },
+    { src: publicAsset("/assets/moss/microsoft.svg"), alt: "Microsoft", height: 20 },
+    { src: publicAsset("/assets/moss/berkeley.svg"), alt: "UC Berkeley", height: 22 },
+    { src: publicAsset("/assets/moss/stanford.svg"), alt: "Stanford", height: 24 },
+    { src: publicAsset("/assets/moss/cmu.svg"), alt: "CMU", height: 20 },
+    { src: publicAsset("/assets/moss/langchain.svg"), alt: "LangChain", height: 22 },
+    { src: publicAsset("/assets/moss/nextjs.svg"), alt: "Next.js", height: 18 },
   ];
 
   return (

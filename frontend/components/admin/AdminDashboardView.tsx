@@ -5,6 +5,7 @@ import { Button } from "../ui/Button";
 import { Card } from "../ui/Card";
 import { HOSPITAL_NODES, HospitalNode } from "../../lib/hospitalData";
 import { HospitalIcon, ZapIcon, ShieldCheckIcon, CloseIcon } from "../ui/Icons";
+import { apiUrl, publicAsset } from "../../lib/urls";
 
 interface HealthStatus {
   status: string;
@@ -27,7 +28,7 @@ export const AdminDashboardView: React.FC = () => {
 
   // Try fetching live locations and health from backend if available
   useEffect(() => {
-    fetch("/api/locations")
+    fetch(apiUrl("/locations"))
       .then((res) => res.json())
       .then((data) => {
         if (data && data.locations) {
@@ -42,7 +43,7 @@ export const AdminDashboardView: React.FC = () => {
       })
       .catch(() => {});
 
-    fetch("/api/health")
+    fetch(apiUrl("/health"))
       .then((res) => res.json())
       .then((data) => {
         if (data) setHealth(data);
@@ -61,7 +62,7 @@ export const AdminDashboardView: React.FC = () => {
 
     // Call API if server exists
     try {
-      await fetch(`/api/admin/nodes/${nodeId}/availability`, {
+      await fetch(apiUrl(`/admin/nodes/${nodeId}/availability`), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ is_available: newStatus }),
@@ -97,7 +98,7 @@ export const AdminDashboardView: React.FC = () => {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "10px" }}>
-            <img src="/assets/brand/navcore-emblem-icon.png" alt="NavCore" width="32" height="32" />
+            <img src={publicAsset("/assets/brand/navcore-emblem-icon.png")} alt="NavCore" width="32" height="32" />
             <span style={{ fontSize: "18px", fontWeight: 700, color: "#0f1410" }}>
               Nav<span style={{ color: "#2d5016" }}>Core</span> Admin
             </span>

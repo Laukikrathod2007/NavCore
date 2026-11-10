@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { SectionHeader } from "../layout/SectionHeader";
 import { Card } from "../ui/Card";
 import { Badge } from "../ui/Badge";
+import { publicAsset } from "../../lib/urls";
 
 interface WorkflowNode {
   step: number;
@@ -114,7 +115,7 @@ export const WorkflowPipeline: React.FC = () => {
         }}
       >
         <img
-          src="/assets/diagrams/langgraph-workflow.svg"
+          src={publicAsset("/assets/diagrams/langgraph-workflow.svg")}
           alt="LangGraph 7 Node Pipeline"
           style={{ width: "100%", height: "auto" }}
         />

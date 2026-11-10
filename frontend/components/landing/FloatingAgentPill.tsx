@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { publicAsset } from "../../lib/urls";
 
 export const FloatingAgentPill: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -48,7 +49,7 @@ export const FloatingAgentPill: React.FC = () => {
             }}
           >
             <img
-              src="/assets/brand/navcore-emblem-icon.png"
+              src={publicAsset("/assets/brand/navcore-emblem-icon.png")}
               alt="NavCore"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
