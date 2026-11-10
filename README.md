@@ -1,5 +1,12 @@
 # NavCore
 
+## Live API
+
+**Railway:** [navcore-production-06ce08bd.up.railway.app](https://navcore-production-06ce08bd.up.railway.app)  
+Health check: [`/health`](https://navcore-production-06ce08bd.up.railway.app/health) · Interactive API: [`/docs`](https://navcore-production-06ce08bd.up.railway.app/docs)
+
+The hosted service runs without Ollama and uses deterministic template directions. The browser frontend is not hosted at this API URL.
+
 **Offline-first, multilingual indoor navigation for complex public buildings.**
 
 NavCore turns a visitor’s text or speech into a route through an indoor facility. It pairs multilingual semantic retrieval—which interprets phrases such as “heart specialist”—with a topological map that computes a physically connected route. The language model can explain the route; deterministic graph search chooses it.
