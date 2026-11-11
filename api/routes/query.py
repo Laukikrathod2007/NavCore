@@ -103,7 +103,9 @@ async def query_text(
     if body.language_override:
         initial_state["detected_language"] = body.language_override
 
-    result = workflow.invoke(initial_state)
+    # Keep CPU-heavy embedding inference off the event loop so health checks
+    # and other requests remain responsive while a route is being resolved.
+    result = await run_in_threadpool(workflow.invoke, initial_state)
     latency_ms = (time.time() - start_time) * 1000
     logger.info(
         f"Text query processed in {latency_ms:.0f}ms | "

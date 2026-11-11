@@ -5,13 +5,26 @@ semantic search across Hindi, Marathi, English, and code-mixed text.
 """
 
 import logging
+import os
 from typing import List
 
+import torch
 from sentence_transformers import SentenceTransformer
 
 from core.config import Config
 
 logger = logging.getLogger(__name__)
+
+# Railway gives the CPU-only service a small CPU quota. Letting PyTorch spawn a
+# large host-sized thread pool can make a single embedding batch stall badly.
+_torch_threads = os.environ.get("TORCH_NUM_THREADS")
+if _torch_threads:
+    torch.set_num_threads(max(1, int(_torch_threads)))
+    try:
+        torch.set_num_interop_threads(1)
+    except RuntimeError:
+        # PyTorch only allows setting inter-op threads before parallel work starts.
+        logger.debug("PyTorch inter-op thread count was already initialized")
 
 
 class EmbeddingManager:
